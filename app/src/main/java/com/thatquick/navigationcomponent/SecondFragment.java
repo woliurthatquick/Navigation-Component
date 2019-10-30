@@ -44,7 +44,7 @@ public class SecondFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                navController.navigate(R.id.action_secondFragment_to_thirdFragment);
+                navController.navigate(R.id.action_secondFragment_to_thirdFragment2);
             }
         });
     }

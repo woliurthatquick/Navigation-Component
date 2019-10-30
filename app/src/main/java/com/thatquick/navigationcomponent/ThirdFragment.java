@@ -43,7 +43,7 @@ public class ThirdFragment extends Fragment {
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                startActivity(new Intent(requireActivity(),MainActivity.class));
+                navController.navigate(R.id.action_thirdFragment_to_fourthFragment);
             }
         });
     }

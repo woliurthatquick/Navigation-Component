@@ -8,6 +8,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
 import androidx.navigation.NavController;
+import androidx.navigation.NavDestination;
 import androidx.navigation.Navigation;
 
 import android.view.LayoutInflater;
@@ -43,11 +44,12 @@ public class FirstFragment extends Fragment {
 
         button = view.findViewById(R.id.button);
         button5 = view.findViewById(R.id.button5);
+
         button.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 //startActivity(new Intent(requireActivity(),SecondActivity.class));
-                navController.navigate(R.id.action_firstFragment_to_secondActivity);
+                navController.navigate(R.id.action_firstFragment_to_secondFragment);
             }
         });
 
@@ -57,5 +59,6 @@ public class FirstFragment extends Fragment {
 
             }
         });
+
     }
 }

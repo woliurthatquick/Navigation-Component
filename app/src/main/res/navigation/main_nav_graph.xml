@@ -11,24 +11,30 @@
         android:label="fragment_first"
         tools:layout="@layout/fragment_first" >
         <action
-            android:id="@+id/action_firstFragment_to_secondActivity"
-            app:destination="@id/navigation" />
+            android:id="@+id/action_firstFragment_to_secondFragment"
+            app:destination="@id/secondFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/secondFragment"
+        android:name="com.thatquick.navigationcomponent.SecondFragment"
+        android:label="fragment_second"
+        tools:layout="@layout/fragment_second" >
+        <action
+            android:id="@+id/action_secondFragment_to_thirdFragment2"
+            app:destination="@id/thirdFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/thirdFragment"
+        android:name="com.thatquick.navigationcomponent.ThirdFragment"
+        android:label="fragment_third"
+        tools:layout="@layout/fragment_third" >
+        <action
+            android:id="@+id/action_thirdFragment_to_fourthFragment"
+            app:destination="@id/fourthFragment" />
     </fragment>
     <fragment
         android:id="@+id/fourthFragment"
         android:name="com.thatquick.navigationcomponent.FourthFragment"
         android:label="fragment_fourth"
         tools:layout="@layout/fragment_fourth" />
-    <navigation
-        android:id="@+id/navigation"
-        app:startDestination="@id/secondActivity" >
-        <activity
-            android:id="@+id/secondActivity"
-            android:name="com.thatquick.navigationcomponent.SecondActivity"
-            android:label="activity_second"
-            tools:layout="@layout/activity_second" />
-        <action
-            android:id="@+id/action_global_fourthFragment"
-            app:destination="@id/fourthFragment" />
-    </navigation>
 </navigation>
